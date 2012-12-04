@@ -1,0 +1,15 @@
+---
+title: Home
+---
+
+<div class="main">
+    <article class="about-article">
+        <section>
+        	<% sitemap.articles.each do |article| %>
+        		<%= article.render %><br/>
+        	<% end %>
+        </section>
+    </article>
+</div>
+
+ <ol>

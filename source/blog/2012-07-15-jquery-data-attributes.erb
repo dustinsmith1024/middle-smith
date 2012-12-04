@@ -1,0 +1,13 @@
+---
+layout: post
+title: jQuery Data Attributes
+blog: published
+categories: 
+- jquery
+- mini
+- commands
+date: "2012-07-15"
+---
+
+<span class="first-letter">W</span>orking on some random jQuery this weekend I noticed something about data-attributes that I hadn't before.  Apparently jQuery's .data() function tries to coerce any number like value into an actual JS number object.  This means data-whatever="0000" turns into whatever=0 in the .data() object. So, it is advised to use .attr() whenever you need to get the true value of an attribute.
+
